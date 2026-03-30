@@ -35,6 +35,8 @@ jobs:
           # - sharp-libvips-*: native binaries, consumed via dynamic linking only
           # - sharp-win32/wasm*: same rationale
           # - @wavenet/cookie-law: LGPL-3.0, monitor if bundling pattern changes
+          # - astro-compress → CC0-1.0 (confirmed on the GitHub org page)
+          # - @playform/pipe → MIT (referenced in the package's own README example)
           allow-dependencies-licenses: >-
             pkg:npm/%40img/sharp-libvips-darwin-arm64,
             pkg:npm/%40img/sharp-libvips-darwin-x64,
@@ -51,3 +53,5 @@ jobs:
             pkg:npm/%40img/sharp-win32-ia32,
             pkg:npm/%40img/sharp-win32-x64,
             pkg:npm/%40wavenet/cookie-law
+            pkg:npm/%40playform/pipe,
+            pkg:npm/astro-compress
