@@ -1,0 +1,22 @@
+name: Dependency License Check
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  licenses:
+    name: Check Dependency Licenses
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Dependency Review (License & Vulnerability Policy)
+        uses: actions/dependency-review-action@v4
+        with:
+          license-check: true
+          vulnerability-check: true
+          allow-licenses: MIT, BSD-2-Clause, BSD-3-Clause, 0BSD, Apache-1.0, Apache-1.1, Apache-2.0
