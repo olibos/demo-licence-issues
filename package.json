@@ -1,4 +1,7 @@
 {
   "name": "demo-licence-issues",
-  "packageManager": "yarn@4.13.0"
+  "packageManager": "yarn@4.13.0",
+  "dependencies": {
+    "ckeditor": "^4.12.1"
+  }
 }
