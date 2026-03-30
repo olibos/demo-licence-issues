@@ -22,4 +22,4 @@ jobs:
           comment-summary-in-pr: always
           license-check: true
           vulnerability-check: true
-          allow-licenses: MIT, BSD-2-Clause, BSD-3-Clause, 0BSD, Apache-1.0, Apache-1.1, Apache-2.0
+          allow-licenses: MIT, BSD-2-Clause, BSD-3-Clause, 0BSD, Apache-1.0, Apache-1.1, Apache-2.0, ISC, BlueOak-1.0.0, MPL-2.0
