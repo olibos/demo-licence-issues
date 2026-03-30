@@ -5,6 +5,7 @@ on:
 
 permissions:
   contents: read
+  pull-requests: write
 
 jobs:
   licenses:
@@ -17,6 +18,7 @@ jobs:
       - name: Dependency Review (License & Vulnerability Policy)
         uses: actions/dependency-review-action@v4
         with:
+          comment-summary-in-pr: always
           license-check: true
           vulnerability-check: true
           allow-licenses: MIT, BSD-2-Clause, BSD-3-Clause, 0BSD, Apache-1.0, Apache-1.1, Apache-2.0
