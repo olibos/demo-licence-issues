@@ -5,8 +5,17 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
+"ckeditor@npm:^4.12.1":
+  version: 4.12.1
+  resolution: "ckeditor@npm:4.12.1"
+  checksum: 10c0/24e8cace8a01d4af592e20fa688b4b9df5b7840d6a8650f44a9dbc318b5aa2b494145465f13e3cc16d8b445f1b7a03a7b1b10a30ad158a1df84527d4ae88d3de
+  languageName: node
+  linkType: hard
+
 "demo-licence-issues@workspace:.":
   version: 0.0.0-use.local
   resolution: "demo-licence-issues@workspace:."
+  dependencies:
+    ckeditor: "npm:^4.12.1"
   languageName: unknown
   linkType: soft
